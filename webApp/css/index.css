@@ -44,6 +44,9 @@ a{
 .tar{
 	text-align: right;
 }
+.tac{
+    text-align: center;
+}
 .clearfix:after{
 	display: block;
     clear: both;
@@ -86,6 +89,7 @@ header, section, footer, aside, nav, main, article, figure {
     display: block; 
 }
 .app_item{
+    height: 30px;
 	padding: 7.5px 10px;
 	border-bottom: 1px solid #dcdcdc;
 }
@@ -424,7 +428,6 @@ a.page-next {
 }
 .user-info{
 	text-align: center;
-    margin-bottom: 30px;
 }
 .user-info .user-img{
 	width: 60px;
@@ -502,4 +505,7 @@ a.page-next {
     background-color: #fe90b0;
     color: white;
     border-radius: 5px;
+}
+.banner-footer img{
+    width: 100%;
 }
