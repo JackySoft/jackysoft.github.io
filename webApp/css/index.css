@@ -404,9 +404,19 @@ a.page-next {
 }
 .item-pic{
 	margin: 30px;
-    padding: 2px;
+    padding: 4px;
     box-shadow: 0px 0px 15px #A7A6A2;
     border: 1px solid #dddbd7;
+    position: relative;
+}
+.yel-pin{
+    display: inline-block;
+    width: 61px;
+    height: 61px;
+    background: url("img/baby_pin.png");
+    position: absolute;
+    top: -18px;
+    left: -18px;
 }
 .item-video{
     margin: 30px;
