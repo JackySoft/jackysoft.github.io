@@ -413,7 +413,7 @@ a.page-next {
     display: inline-block;
     width: 61px;
     height: 61px;
-    background: url("img/baby_pin.png");
+    background: url("../img/baby_pin.png");
     position: absolute;
     top: -18px;
     left: -18px;
