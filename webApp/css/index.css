@@ -403,10 +403,13 @@ a.page-next {
     background-image: url("../img/grow_bg.png");
 }
 .item-pic{
-	margin: 30px 30px;
+	margin: 30px;
     padding: 2px;
     box-shadow: 0px 0px 15px #A7A6A2;
     border: 1px solid #dddbd7;
+}
+.item-video{
+    margin: 30px;
 }
 .item-pic img{
 	width: 100%;
@@ -416,6 +419,9 @@ a.page-next {
     font-size: 12px;
     color: #646464;
     padding: 0 10px;
+}
+.pic-desc p{
+    text-indent: -4px;
 }
 .pic-desc time{
 	display: block;
