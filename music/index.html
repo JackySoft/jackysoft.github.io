@@ -1,0 +1,25 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>XXXX</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		function A(name){
+			this.name = name;
+			this.sayAge = function(){
+				alert(11);
+			}
+		}
+		A.prototype.sayName = function(){
+			alert(this.name);
+		}
+		function B(name){
+			//A.call(this,name);
+		}
+		B.prototype = new A("jack");
+		var b = new B("jim");
+	</script>
+</body>
+</html>
