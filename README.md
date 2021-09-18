@@ -1,13 +1,9 @@
-# 前端未来空间
+# 河畔一角
 
-## Vue-DevTools开发工具包
+## rocker-render
 
-`chrome.zip`
+> 基于Vue2.6版本开发的低代码组件，通过简单的json配置即可快速创建表单和表格页面。
 
-## 使用方法
+rocker-render包含三个组件：rocket-form、rocket-table、power-form
 
-1. 下载chrome.zip
-2. 解压文件
-3. 导入到浏览器的扩展程序中
 
-## unpacked.zip对应的是React-Devtools
