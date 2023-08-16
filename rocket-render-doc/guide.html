@@ -8,8 +8,8 @@
     <link rel="icon" href="/rocket-render-doc/favicon.ico">
     <meta name="description" content="一款基于Vue2.6开发的表单和表格渲染组件">
     
-    <link rel="preload" href="/rocket-render-doc/assets/css/0.styles.6a79b62c.css" as="style"><link rel="preload" href="/rocket-render-doc/assets/js/app.c1574c69.js" as="script"><link rel="preload" href="/rocket-render-doc/assets/js/2.ebfb74b3.js" as="script"><link rel="preload" href="/rocket-render-doc/assets/js/15.927481c9.js" as="script"><link rel="prefetch" href="/rocket-render-doc/assets/js/10.08377bc1.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/11.61283063.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/12.9ad51eff.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/13.cb154966.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/14.45c2273b.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/3.0541269f.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/4.839b1a9f.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/5.e6a4b6ef.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/6.559144e5.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/7.6cdbc63b.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/8.d094eb16.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/9.5f2b73d6.js">
-    <link rel="stylesheet" href="/rocket-render-doc/assets/css/0.styles.6a79b62c.css">
+    <link rel="preload" href="/rocket-render-doc/assets/css/0.styles.79a7688e.css" as="style"><link rel="preload" href="/rocket-render-doc/assets/js/app.b2844f32.js" as="script"><link rel="preload" href="/rocket-render-doc/assets/js/2.ebfb74b3.js" as="script"><link rel="preload" href="/rocket-render-doc/assets/js/15.937b73e9.js" as="script"><link rel="prefetch" href="/rocket-render-doc/assets/js/10.b5d78e20.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/11.375e8ce9.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/12.93daa080.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/13.8409fb83.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/14.65b58d86.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/3.0541269f.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/4.839b1a9f.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/5.e6a4b6ef.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/6.559144e5.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/7.56488bc2.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/8.d094eb16.js"><link rel="prefetch" href="/rocket-render-doc/assets/js/9.5f2b73d6.js">
+    <link rel="stylesheet" href="/rocket-render-doc/assets/css/0.styles.79a7688e.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/rocket-render-doc/" class="home-link router-link-active"><img src="logo.png" alt="RocketForm" class="logo"> <span class="site-name can-hide">RocketForm</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/rocket-render-doc/" class="nav-link">
@@ -27,13 +27,11 @@
 <span class="token keyword">import</span> <span class="token string">'rocket-render/lib/rocket-render.css'</span><span class="token punctuation">;</span>
 Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>RocketRender<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><ol start="3"><li>页面应用</li></ol> <blockquote><p>为了页面的美观，建议外层加一个容器。search-form 默认没有任何背景色和边距。</p></blockquote> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>search-box<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>search-form</span>
-      <span class="token attr-name">:json</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span>
-      <span class="token attr-name">:model.sync</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>queryForm<span class="token punctuation">&quot;</span></span>
-      <span class="token attr-name">@handleQuery</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>getTableList<span class="token punctuation">&quot;</span></span>
-    <span class="token punctuation">/&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>search-form</span>
+    <span class="token attr-name">:json</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:model.sync</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>queryForm<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">@handleQuery</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>getTableList<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">/&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
   <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
@@ -47,22 +45,12 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
             label<span class="token operator">:</span> <span class="token string">'用户'</span><span class="token punctuation">,</span>
             placeholder<span class="token operator">:</span> <span class="token string">'请输入用户名称'</span><span class="token punctuation">,</span>
           <span class="token punctuation">}</span><span class="token punctuation">,</span>
-          <span class="token punctuation">{</span>
-            type<span class="token operator">:</span> <span class="token string">'switch'</span><span class="token punctuation">,</span>
-            model<span class="token operator">:</span> <span class="token string">'open'</span><span class="token punctuation">,</span>
-            label<span class="token operator">:</span> <span class="token string">'状态'</span><span class="token punctuation">,</span>
-          <span class="token punctuation">}</span><span class="token punctuation">,</span>
         <span class="token punctuation">]</span><span class="token punctuation">,</span>
       <span class="token punctuation">}</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
-  <span class="token selector">.search-box</span> <span class="token punctuation">{</span>
-    <span class="token property">padding</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">12/31/2021, 3:30:58 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">8/15/2023, 5:47:41 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
       ←
       <a href="/rocket-render-doc/" class="prev router-link-active">
         介绍
@@ -71,6 +59,6 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/rocket-render-doc/assets/js/app.c1574c69.js" defer></script><script src="/rocket-render-doc/assets/js/2.ebfb74b3.js" defer></script><script src="/rocket-render-doc/assets/js/15.927481c9.js" defer></script>
+    <script src="/rocket-render-doc/assets/js/app.b2844f32.js" defer></script><script src="/rocket-render-doc/assets/js/2.ebfb74b3.js" defer></script><script src="/rocket-render-doc/assets/js/15.937b73e9.js" defer></script>
   </body>
 </html>
